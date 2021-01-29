@@ -14,7 +14,10 @@ class Soldier {
 
 }
 
+
+
 // Viking
+
 class Viking extends Soldier {
     constructor(name, health, strength) {
         super(health, strength)
@@ -31,32 +34,36 @@ class Viking extends Soldier {
     }
 }
 
+
+
+
+
 // Saxons
-class Saxon { }
 
-// class Saxon extends Soldier {
-//     constructor(healthArg, strengthArg) {
-//       super(healthArg, strengthArg)
-//     }
+class Saxon extends Soldier {
+    constructor(healthArg, strengthArg) {
+        super(healthArg, strengthArg)
+    }
 
-//     receiveDamage(damage) {
-//       this.health -= damage;
-//       return this.health > 0 ? `A Saxon has received ${damage} points of damage` : 'A Saxon has died in combat'
-//     }
-//   }
+    receiveDamage(damage) {
+        this.health -= damage;
+        return this.health > 0 ? `A Saxon has received ${damage} points of damage` : 'A Saxon has died in combat'
+    }
+}
 
 
 
 // War
+
 class War { }
 
-// class Saxon extends Soldier {
-//     constructor(healthArg, strengthArg) {
-//       super(healthArg, strengthArg)
-//     }
+class Saxon extends Soldier {
+    constructor(healthArg, strengthArg) {
+        super(healthArg, strengthArg)
+    }
 
-//     receiveDamage(damage) {
-//       this.health -= damage;
-//       return this.health > 0 ? `A Saxon has received ${damage} points of damage` : 'A Saxon has died in combat'
-//     }
-//   }
+    receiveDamage(damage) {
+        this.health -= damage;
+        return this.health > 0 ? `A Saxon has received ${damage} points of damage` : 'A Saxon has died in combat'
+    }
+}
